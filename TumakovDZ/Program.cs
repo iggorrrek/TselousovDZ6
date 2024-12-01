@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace TumakovDZ
 {
-    enum TypeSchet
+    public enum TypeSchet
     {
         tekushiy,
         sberegatelnuy
     }
     public class BankSchet
     {
-        public int IDSchet ;
-        public decimal BalanceSchet;
-        public TypeSchet typeSchet ;
+        private int IDSchet ;
+        private decimal BalanceSchet;
+        private TypeSchet typeSchet ;
         public BankSchet(int iDSchet, decimal balanceSchet, TypeSchet typeSchet)
         {
             IDSchet = iDSchet;
@@ -26,8 +26,7 @@ namespace TumakovDZ
         { return IDSchet; }
         public decimal GetBalanceSchet()
         { return BalanceSchet; }
-        public decimal SetBalanceSchet(decimal newBalanceSchet)
-        { BalanceSchet = newBalanceSchet; }
+        public decimal SetBalanceSchet(decimal newBalanceSchet) => BalanceSchet = newBalanceSchet;
         public TypeSchet GetTypeSchet()
         { return typeSchet; }
         public void PrintBankSchet()
@@ -48,6 +47,7 @@ namespace TumakovDZ
             Console.WriteLine("N1\n");
 
             BankSchet bankSchet = new BankSchet(1234, 2000000, TypeSchet.tekushiy);
+            bankSchet.SetBalanceSchet(435342);
             bankSchet.PrintBankSchet();
             Console.ReadKey();
         }
