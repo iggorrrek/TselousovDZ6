@@ -47,7 +47,10 @@ namespace TumakovDZ
             Console.WriteLine("N1\n");
 
             BankSchet bankSchet = new BankSchet(1234, 2000000, TypeSchet.tekushiy);
-            bankSchet.SetBalanceSchet(435342);
+            Console.WriteLine("VVedite schet  i  td");
+            decimal num;
+            bool a = decimal.TryParse(Console.ReadLine(), out num); 
+            bankSchet.SetBalanceSchet(num);
             bankSchet.PrintBankSchet();
             Console.ReadKey();
         }
