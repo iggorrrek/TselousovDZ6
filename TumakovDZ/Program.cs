@@ -8,9 +8,10 @@ namespace TumakovDZ
     {
         static void Main(string[] args)
         {
-            //Task1();
-            //Task2();
+            Task1();
+            Task2();
             Task3();
+            Task4();
             Console.ReadKey();
         }
         static void Task1()
@@ -140,6 +141,26 @@ namespace TumakovDZ
                 }
             }
             bankSchet.PrintBankSchet3();
+        }
+        static void Task4()
+        {
+            Console.WriteLine("\nЗадание номер 4\n");
+
+            Zdanie zdanie1 = new Zdanie();
+            zdanie1.SetValues(50, 10, 200, 4); // первое высота второе этажи третье квартиры четвертое подьезды
+            zdanie1.PrintInfo();
+
+            Zdanie zdanie2 = new Zdanie();
+            zdanie2.SetValues(150, 40, 500, 3);
+            zdanie2.PrintInfo();
+
+            Zdanie zdanie3 = new Zdanie();
+            zdanie3.SetValues(90, 20, 300, 3);
+            zdanie3.PrintInfo();
+
+            Zdanie zdanie4 = new Zdanie();
+            zdanie4.SetValues(20, 4, 200, 10);
+            zdanie4.PrintInfo();
         }
     }
 }
