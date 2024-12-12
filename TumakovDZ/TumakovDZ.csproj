@@ -46,6 +46,7 @@
     <Compile Include="bank.cs" />
     <Compile Include="bank2.cs" />
     <Compile Include="bank3.cs" />
+    <Compile Include="jggygc.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Zdanie.cs" />
